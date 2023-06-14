@@ -31,14 +31,14 @@ public class MainActivity extends AppCompatActivity {
         vbinding.foto1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                llamar(""+R.drawable.ima1);
+                llamar(""+R.drawable.ima2);
             }
         });
 
         vbinding.foto2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                llamar(""+R.drawable.ima2);
+                llamar(""+R.drawable.ima4);
             }
         });
 
@@ -52,7 +52,7 @@ public class MainActivity extends AppCompatActivity {
         vbinding.foto4.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                llamar(""+R.drawable.ima4);
+                llamar(""+R.drawable.ima1);
             }
         });
 
@@ -60,6 +60,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 finishAffinity();
+
             }
         });
     }

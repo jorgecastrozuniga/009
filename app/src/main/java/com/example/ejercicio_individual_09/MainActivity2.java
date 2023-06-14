@@ -28,15 +28,13 @@ public class MainActivity2 extends AppCompatActivity {
         Intent intento = getIntent();
 
         // Se recibe String foto, se parsea a entero.
-        String foto= intento.getStringExtra("foto");
-        abinding.fotorecibida.setImageResource(Integer.parseInt(foto));
-
-
+        String foto= intento.getStringExtra("Foto");
         abinding.botonvolver.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 finish();
             }
         });
+        abinding.fotorecibida.setImageResource(Integer.parseInt(foto));
     }
 }
